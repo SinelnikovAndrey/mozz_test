@@ -18,3 +18,13 @@ Future<String> createUser(String name, String email, String password) async {
     return e.message.toString();
   }
 }
+
+//check user session is active or not
+Future<bool> checkSessions() async {
+  try {
+    await account.getSession(sessionId: "current");
+    return true;
+  } catch (e) {
+    return false;
+  }
+}
