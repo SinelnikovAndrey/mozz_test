@@ -127,6 +127,17 @@ class SignUpPage extends StatefulWidget {
                 const SizedBox(
                   height: 10,
                 ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    const Text("Уже есть аккаунт"),
+                    TextButton(
+                        onPressed: () {
+                          Navigator.pushNamed(context, "/login");
+                        },
+                        child: const Text("Войти"))
+                  ],
+                )
               ],
             ),
 
