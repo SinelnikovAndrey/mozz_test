@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       routes: {
-        "/": (context) => const CheckSession(),
+        "/": (context) => const SignUpPage(),
         "/home": (context) => const HomePage(),
         "/signup": (context) => const SignUpPage(),
         "/login": (context) => const LoginPage(),
